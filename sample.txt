@@ -1,0 +1,10 @@
+The categorisation of network packets according to multiple parameters such as sender and receiver addresses is called packet classification. 
+Packet classification lies at the core of Software-Defined Networking (SDN)-based network applications. 
+Due to the increasing speed of network traffic, there is an urgent need for packet classification at higher speeds. 
+Although it is possible to accelerate packet classification algorithms through hardware implementation, this solution imposes high costs and offers limited development capacity. 
+On the other hand, current software methods to solve this problem are relatively slow. 
+A practical solution to this problem is to parallelise packet classification using multi-core processors. 
+In this study, the Thread, parallel patterns library (PPL), open multi-processing (OpenMP), and threading building blocks (TBB) libraries are examined and implemented to parallelise three packet classification algorithms, i.e. tuple space search, tuple pruning search, and hierarchical tree. 
+According to the results, the type of algorithm and rulesets may influence the performance of parallelisation libraries. 
+In general, the TBB-based method shows the best performance among parallelisation libraries due to using a theft mechanism and can accelerate the classification process up to 8.3 times on a system with a quad-core processor.
+(Mahdi Abbasi, Milad Rafiee,2020)
